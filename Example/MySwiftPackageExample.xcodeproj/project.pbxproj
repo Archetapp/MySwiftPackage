@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2652F57F26E82B0A00251B8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2652F55426E82B0A00251B8F /* ContentView.swift */; };
 		2652F58026E82B0A00251B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2652F55526E82B0A00251B8F /* Assets.xcassets */; };
 		2652F58126E82B0A00251B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2652F55526E82B0A00251B8F /* Assets.xcassets */; };
+		2652F59226E82C3500251B8F /* MySwiftPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2652F59126E82C3500251B8F /* MySwiftPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2652F59226E82C3500251B8F /* MySwiftPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +169,9 @@
 			dependencies = (
 			);
 			name = "MySwiftPackageExample (iOS)";
+			packageProductDependencies = (
+				2652F59126E82C3500251B8F /* MySwiftPackage */,
+			);
 			productName = "MySwiftPackageExample (iOS)";
 			productReference = 2652F55A26E82B0A00251B8F /* MySwiftPackageExample.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 2652F54D26E82B0A00251B8F;
+			packageReferences = (
+				2652F59026E82C3500251B8F /* XCRemoteSwiftPackageReference "MySwiftPackage" */,
+			);
 			productRefGroup = 2652F55B26E82B0A00251B8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -696,6 +704,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2652F59026E82C3500251B8F /* XCRemoteSwiftPackageReference "MySwiftPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Archetapp/MySwiftPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2652F59126E82C3500251B8F /* MySwiftPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2652F59026E82C3500251B8F /* XCRemoteSwiftPackageReference "MySwiftPackage" */;
+			productName = MySwiftPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2652F54E26E82B0A00251B8F /* Project object */;
 }
