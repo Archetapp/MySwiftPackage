@@ -14,7 +14,7 @@ public class SwiftPackage {
         
     }
     
-    @available(*, deprecated, renamed: "newFunction")
+    @available(*, deprecated, message: "Function has been renamed", renamed: "newFunction")
     public func OldFunction() {
         
     }
