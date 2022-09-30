@@ -12,6 +12,7 @@ import SwiftUI
            deprecated: 0.8,
            obsoleted: 2.0,
            message: "Something has been done")
+@available(iOS 13.0, *)
 @available(macOS 10.15, *)
 public struct SwiftUIView: View {
 	public init() {}
