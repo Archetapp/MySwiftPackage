@@ -8,10 +8,7 @@
 import Foundation
 import SwiftUI
 
-@available(iOS,
-           deprecated: 0.5,
-           obsoleted: 2.0,
-           message: "Something has been done")
+@available(*, deprecated, message: "Do Something")
 @available(iOS 13.0, *)
 @available(macOS 10.15, *)
 public struct SwiftUIView: View {
