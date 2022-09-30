@@ -8,14 +8,23 @@
 import Foundation
 import SwiftUI
 
-@available(iOS 13.0, *)
+@available(iOS,
+           deprecated: 0.8,
+           obsoleted: 2.0,
+           message: "Something has been done")
+@available(macOS 10.15, *)
 public struct SwiftUIView: View {
 	public init() {}
 	public var body: some View {
 		Text("THIS IS THE SWIFTUIVIEW FROM THE PACKAGE")
-		Image(uiImage: UIImage(named: "starscream", in: .module, with: nil)!)
-			.resizable()
-			.frame(width: 100, height: 100, alignment: .center)
-			.aspectRatio(contentMode: .fit)
 	}
+}
+
+@available(iOS 13.0, *)
+@available(macOS 10.15, *)
+public struct CorrectSwiftUIView: View {
+    public init() {}
+    public var body: some View {
+        Text("THIS IS THE SWIFTUIVIEW FROM THE PACKAGE")
+    }
 }
