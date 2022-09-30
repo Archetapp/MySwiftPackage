@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 public class SwiftPackage {
+    
+    public init() {
+        
+    }
+    
     @available(*, deprecated, renamed: "newFunction")
     public func OldFunction() {
         
