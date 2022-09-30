@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-@available(*, deprecated, message: "Do Something")
+@available(*, deprecated, message: "Do Something", renamed: "CorrectSwiftUIView")
 public struct SwiftUIView: View {
 	public init() {}
 	public var body: some View {
