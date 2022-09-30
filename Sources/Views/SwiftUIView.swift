@@ -9,8 +9,6 @@ import Foundation
 import SwiftUI
 
 @available(*, deprecated, message: "Do Something")
-@available(iOS 13.0, *)
-@available(macOS 10.15, *)
 public struct SwiftUIView: View {
 	public init() {}
 	public var body: some View {
