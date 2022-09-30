@@ -8,19 +8,11 @@
 import Foundation
 import SwiftUI
 
-@available(*, deprecated, renamed: "CorrectSwiftUIView")
-public struct SwiftUIView: View {
-	public init() {}
-	public var body: some View {
-		Text("THIS IS THE SWIFTUIVIEW FROM THE PACKAGE")
-	}
+@available(*, deprecated, renamed: "newFunction")
+func OldFunction() {
+    
 }
 
-@available(iOS 13.0, *)
-@available(macOS 10.15, *)
-public struct CorrectSwiftUIView: View {
-    public init() {}
-    public var body: some View {
-        Text("THIS IS THE SWIFTUIVIEW FROM THE PACKAGE")
-    }
+func newFunction() {
+    
 }
