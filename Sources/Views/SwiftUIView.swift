@@ -14,11 +14,15 @@ public class SwiftPackage {
         
     }
     
-    @available(*, deprecated, message: "Function has been renamed", renamed: "newFunction")
+    //Deprecate this function
+    @available(*,
+                deprecated,
+                message: "This function is deprecated")
     public func oldFunction() {
         
     }
-
+    
+    //Keep this function
     public func newFunction() {
         
     }
