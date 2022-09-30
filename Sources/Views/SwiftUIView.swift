@@ -17,13 +17,14 @@ public class SwiftPackage {
     //Deprecate this function
     @available(*,
                 deprecated,
-                message: "This function is deprecated")
+                message: "This function is deprecated",
+                renamed: "newFunction(int:)")
     public func oldFunction() {
         
     }
     
     //Keep this function
-    public func newFunction() {
+    public func newFunction(int: Int) {
         
     }
 }
