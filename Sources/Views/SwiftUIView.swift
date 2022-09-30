@@ -8,11 +8,13 @@
 import Foundation
 import SwiftUI
 
-@available(*, deprecated, renamed: "newFunction")
-func OldFunction() {
-    
-}
+class SwiftPackage {
+    @available(*, deprecated, renamed: "newFunction")
+    func OldFunction() {
+        
+    }
 
-func newFunction() {
-    
+    func newFunction() {
+        
+    }
 }
