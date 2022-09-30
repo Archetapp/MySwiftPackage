@@ -24,4 +24,5 @@ let package = Package(
             name: "MySwiftPackageTests",
             dependencies: ["MySwiftPackage"]),
     ]
+    
 )
