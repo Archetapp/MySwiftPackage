@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS,
-           deprecated: 0.8,
+           deprecated: 0.5,
            obsoleted: 2.0,
            message: "Something has been done")
 @available(iOS 13.0, *)
